@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function f1() {
+        var num1,i = 1,d;
+        num1 = document.getElementById("num").value;
+        var result = document.getElementById("res");
+        var str="<hr width='140'>";
+        while (i <= 10) {
+          result.innerHTML += num1 + " * " + i + " = " + num1 * i + "<br/>";
+
+          i++;
+        }
+        result.innerHTML=result.innerHTML+str;
+      }
+    </script>                         
+  </head>
+
+  <body>
+    <img src="./read.png" alt="" />
+   
+    <center>
+      <div id="back">
+        <input type="number" id="num" placeholder="Enter Number"/>
+        <button onclick="f1()">Table</button><br /><br />
+        <div id="res"></div>
+        <a href="">Clear</a>
+      </div>
+
+      <p>Design & Develop By Raj</p>
+    </center>
+  </body>
+</html>
